@@ -41,10 +41,26 @@
 # Body
 
 
+def print_horizontal_complete(num_columns):
+	for y in range(0,num_columns):
+		print('+', end=' ')
+		for x in range (0,4):
+			print('-', end=' ')
+	print('+')
 
+def print_horizontal_incomplete(num_columns):
+	for y in range(0,num_columns):
+		print('|', end=' ')
+		for x in range (0,4):
+			print(' ', end=' ')
+	print('|')
 
-
-
+def print_square(num_columns, num_rows):
+	for y in range(0,num_rows):
+		print_horizontal_complete(num_columns)
+		for x in range (0,4):
+			print_horizontal_incomplete(num_columns)
+	print_horizontal_complete(num_columns)
 
 
 
@@ -60,7 +76,8 @@ def main():
     four_by_four()
     """
     print("Hello World!")
-    
+    print_square(2, 2)
+    print_square(4, 4)
 
 
 

@@ -10,10 +10,11 @@
 
 
 
-
-
-
-
+def do_n(a, times):
+	if times <= 0:
+		return
+	a()
+	do_n(a, times-1)
 
 
 # Write your functions above:
@@ -25,7 +26,8 @@ def main():
     When complete have one function call in this function:
     do_n(print_hello, 10)
     """
-    print_hello() # replace this with do_n(print_hello, 10)
+    #print_hello() # replace this with do_n(print_hello, 10)
+    do_n(print_hello, 10)
 
 
 

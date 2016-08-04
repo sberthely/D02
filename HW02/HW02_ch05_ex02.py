@@ -21,6 +21,16 @@
 # Write your functions below:
 # Body
 
+def check_fermat_ints():
+	a=int(input("Value of a\n"))
+	b=int(input("Value of b\n"))
+	c=int(input("Value of c\n"))
+	n=int(input("Value of n\n"))
+    
+	if(a**n+b**n == c**n):
+		print ('Holy smokes, Fermat was wrong!')
+	else:
+		print ('No, that doesn’t work.')
 
 
 
@@ -40,6 +50,8 @@ def main():
     check_fermat()
     """
     print("Hello World!")
+
+    check_fermat_ints()
 
 
 

@@ -29,11 +29,27 @@
 # Write your functions below:
 # Body
 
+a='SEL'
+def f(a):
+	print(a)
+
+def do_twice(f, a):
+    f(a)
+    f(a)
 
 
+def print_twice(a):
+    print(a)
+    print(a)
+
+def do_twice():
+    print_twice('spam')
+    print_twice('spam')
 
 
-
+def do_four(f, a):
+	for x in range (0, 4):
+		f(a)
 
 # Write your functions above:
 ################################################################################
@@ -44,6 +60,7 @@ def main():
     """
     print("Hello World!")
     
+    do_four(print_twice, 'SEL')
 
 
 if __name__ == "__main__":

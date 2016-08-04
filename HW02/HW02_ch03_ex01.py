@@ -15,11 +15,12 @@
 # Write your function below:
 # Body
 
-
-
-
-
-
+def right_justify(x):
+    spaces = 70 - len(x)
+    final_string = x
+    for x in range (0, spaces):
+        final_string = ' ' + final_string
+    print (final_string)
 
 # Write your function above:
 ################################################################################
@@ -27,7 +28,7 @@ def main():
     """Call your functions within this function."""
     print("Hello World!")
     right_justify("Python")
-    right_justify("YOUR_NAME")
+    right_justify("SEL")
 
 if __name__ == "__main__":
     main()
